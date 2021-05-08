@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+{% block title %}Login{% endblock title %}
+
+{% block content %}
+<div class="container px-5">
+    <form action="" method="POST">
+        <h3 class="text-center mt-4">Login</h3>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email">
+            
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password">
+        </div>
+        <input class="btn btn-danger" type="reset" name="clear" id="clear" value="Clear">
+        <input class="btn btn-success" type="submit" name="submit" id="submit" value="Login">
+    </form>
+</div>
+{% endblock content %}
